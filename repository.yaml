@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Hanno's Home Assistant add-on repository
+url: 'https://github.com/home-assistant/addons-example'
+maintainer: Hanno <hanno.van.der.maas@hotmail.com>
