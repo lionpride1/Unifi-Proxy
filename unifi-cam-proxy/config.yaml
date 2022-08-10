@@ -1,8 +1,9 @@
 name: "Unfi Protect Cam proxy"
 description: "Proxy for ONVIF IP cameras to be used in Unif Protect NVR"
-version: "1.1.2"
+version: "1.3.2"
 slug: "unifi_proxy"
 init: false
+image: ghcr.io/lionpride1/unifi-cam-proxy:latest
 arch:
   - aarch64
   - amd64
