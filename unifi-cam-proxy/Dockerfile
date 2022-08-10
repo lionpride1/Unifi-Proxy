@@ -1,5 +1,5 @@
-#!ARG BUILD_FROM
-#!FROM $BUILD_FROM
+ARG BUILD_FROM
+FROM ghcr.io/lionpride1/unifi-cam-proxy:2.0.0
 WORKDIR /app
 
 #!RUN apk add --update gcc libc-dev linux-headers libusb-dev
