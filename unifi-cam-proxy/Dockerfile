@@ -1,5 +1,5 @@
-# ARG BUILD_FROM=ghcr.io/lionpride1/unifi-cam-proxy:2.1.0
-ARG BUILD_FROM=keshavdv/unifi-cam-proxy
+# ARG BUILD_FROM=keshavdv/unifi-cam-proxy
+ARG BUILD_FROM=ghcr.io/lionpride1/unifi-cam-proxy:2.3.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 WORKDIR /app
@@ -12,6 +12,7 @@ WORKDIR /app
 
 COPY ./docker/entrypoint.sh /
 COPY ./docker/client.pem /
+RUN chown -R /app
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["unifi-cam-proxy"]
