@@ -12,7 +12,8 @@ WORKDIR /app
 
 COPY ./docker/entrypoint.sh /
 COPY ./docker/client.pem /
-RUN chown -R /app
+RUN whoami
+RUN chown -R guest /app
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["unifi-cam-proxy"]
