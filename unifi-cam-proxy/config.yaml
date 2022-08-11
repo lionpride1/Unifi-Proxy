@@ -1,6 +1,6 @@
 name: "Unfi Protect Cam proxy"
 description: "Proxy for ONVIF IP cameras to be used in Unif Protect NVR"
-version: "2.1.0"
+version: "2.2.0"
 slug: "unifi_proxy"
 init: false
 arch:
