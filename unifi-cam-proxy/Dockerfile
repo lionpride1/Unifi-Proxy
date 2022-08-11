@@ -1,4 +1,5 @@
-ARG BUILD_FROM=ghcr.io/lionpride1/unifi-cam-proxy:2.1.0
+# ARG BUILD_FROM=ghcr.io/lionpride1/unifi-cam-proxy:2.1.0
+ARG BUILD_FROM=keshavdv/unifi-cam-proxy
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 WORKDIR /app
